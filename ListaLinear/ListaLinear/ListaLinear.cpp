@@ -15,8 +15,6 @@ void buscarElemento();
 const int MAX = 2;;
 int lista[MAX]{};
 int nElementos = 0;
-int busca;
-int pos;
 
 
 int main()
@@ -103,23 +101,8 @@ void inserirElemento()
 
 }
 
+// deve ser implementada como resposta ao exercicio
 void buscarElemento()
 {
-	pos = -1;
 
-	cout << "Digite a busca: ";
-	cin >> busca;
-
-	for (int n = 0; n < MAX; n++) {
-		if (busca == lista[n]){
-			pos = n;
-			}
-	}
-	
-	if (pos != -1){
-		cout << "Elemento encontrado na posicao: " << pos << endl;
-	}
-	else {
-		cout << "Elemento nao encontrado." << endl;
-	}
 }
